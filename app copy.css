@@ -1,0 +1,144 @@
+
+body{
+    box-sizing: border-box;
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.panel {
+    width: 100%;
+    max-width: 960px;
+    border-radius: 10px;
+}
+
+.pricing-table {
+        
+    display: flex;
+    flex-wrap: wrap;
+    /* flex: 1; */
+    justify-content: center;
+    align-items: center;
+} 
+
+.pricing-plan {
+    /* flex: 1; */
+    background-color: #f0f0f0;
+    /* border: red solid 1px; */
+    width: 25%;
+    padding: 30px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-plan>ul {
+    border: solid darkgray 1px;
+    border-width: 1px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding: 10px 5px; */
+    color: #60a9ff;
+}
+
+.pricing-plan>ul>li:nth-of-type(2){
+    border-top: 1px solid darkgray;
+}
+
+.pricing-plan>ul>li {
+    padding: 10px 5px;
+    font-size: 0.7em;
+
+}
+
+.pricing-plan>h2{
+    color: gray;
+    /* padding: 10px 20px; */
+    margin: 20px 0px 30px;
+}
+
+.pricing-plan {
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    /* font-size: large;*/
+
+    font-weight: bold;
+
+}
+
+.pricing-table{
+    padding:15px 0px;
+    /* border: 2px green solid; */
+    background-color: #f0f0f0;
+
+}
+
+.pricing-plan>a {
+    /* font-size: 2em; */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px #60a9ff solid;
+    border-radius: 5px;
+    font-size: 0.7em;
+    color: #60a9ff;
+}
+
+.pricing-price {
+    font-size: 1.7em;
+    margin: 20px;
+    color: #60a9ff;
+    font-weight: bolder;
+}
+
+.pricing-plan:nth-of-type(2)>a {
+    background-color: #60a9ff;
+    color: white;
+    border: 0px;
+}
+
+.pricing-plan:nth-of-type(2) {
+
+    border: 1px gray solid;
+    border-width: 0px 1px 0px 1px;
+}
+
+
+@media (max-width: 726px) {
+    .pricing-table {
+        /* background-color: orange; */
+        flex-direction: column;
+        /* border: solid green 2px; */
+        align-items: flex-start;
+        /* flex-grow: 10; */
+        
+    }
+
+    .pricing-plan{
+        flex-direction: column;
+        /* justify-content: center; */
+        padding-left: 0px;
+        padding-right: 0px;
+        border-width: 0px;
+        margin-left: 0;
+        width: 100vw;
+        
+    }
+
+    .pricing-plan:nth-of-type(2) {
+        border: 1px gray solid;
+        border-width: 1px 0px 1px 0px;
+    }
+
+    body>div>.panel .pricing-table{
+        background-color: red;
+    }
+    img {
+        /* width:200px; */
+    }
+}
+
